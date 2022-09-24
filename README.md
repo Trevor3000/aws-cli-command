@@ -7,6 +7,8 @@
 aws ec2 describe-instances --filters "Name=instance-type,Values=running" --query "Reservations[].Instances[].InstanceId"
 
 aws ec2 describe-instances --query "Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone,Name:State.Name}" 
+
+
 在对应的实例上执行命令，注意将 instance-ID 改成自己实例的 ID
 
 aws ssm send-command \
