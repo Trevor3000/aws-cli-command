@@ -48,5 +48,10 @@ public-hostname    接口的公有 DNS (IPv4)
 placement/region    实例的 AWS 区域
 public-keys/0/openssh-key    公有密钥
 /iam/security-credentials/<rolename>    获取角色的临时凭证
+    
+    
+ali
+    http://100.100.100.200/latest/meta-data
+    http://100.100.100.200/latest/meta-data/ram/security-credentials/ 
   
   来源：https://wiki.teamssix.com/CloudService/EC2/ec2-exec-command.html
